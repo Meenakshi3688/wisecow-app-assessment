@@ -22,11 +22,10 @@ Create Dockerfile for the image and corresponding k8s manifest to deploy in k8s 
 Github action for creating new image when changes are made to this repo
 [Challenge goal]: Enable secure TLS communication for the wisecow app.
 
-Expected Artifacts
-Github repo containing the app with corresponding dockerfile, k8s manifest, any other artifacts needed.
-Github repo with corresponding github action.
-Github repo should be kept private and the access should be enabled for following github IDs: nyrahul
-
+## Expected Artifacts
+1. Github repo containing the app with corresponding dockerfile, k8s manifest, any other artifacts needed.
+2. Github repo with corresponding github action.
+3. Github repo should be kept private and the access should be enabled for following github IDs: nyrahul
 
 
 # Implementation Details
@@ -455,7 +454,3 @@ Additionally, developed two Bash scripts for Linux system resource monitoring an
 This project provided practical experience with containerization, Kubernetes orchestration, CI/CD automation, cloud infrastructure, TLS configuration, and Linux shell scripting.
 3. [Challenge goal]: Enable secure TLS communication for the wisecow app.
 
-## Expected Artifacts
-1. Github repo containing the app with corresponding dockerfile, k8s manifest, any other artifacts needed.
-2. Github repo with corresponding github action.
-3. Github repo should be kept private and the access should be enabled for following github IDs: nyrahul
