@@ -408,7 +408,7 @@ Application is UP
 - Uses connection and request timeouts.
 - Displays application status as UP or DOWN.
 
-**Note:** The current script uses the EC2 private IP with curl's `--resolve` option and `-k` to skip certificate verification because the lab uses a self-signed certificate. The IP address and hostname must be updated if the EC2 instance changes. These settings are specific to this lab environment and are not recommended for production.
+**Note:** In this project, I used the EC2 private IP with the `curl --resolve` option to check the application. I also used `-k` because I configured a self-signed TLS certificate. If the EC2 IP address changes, I need to update the IP and hostname in the script. These configurations are used for this practice project.
 
 ---
 
