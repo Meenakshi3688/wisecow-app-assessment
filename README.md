@@ -38,7 +38,7 @@ This section describes the implementation of both problem statements.
 
 # Implementation Details
 
-This section describes the implementation of the two problem statements in the Accuknox DevOps Trainee Practical Assessment.
+This section describes the implementation of the two problem statements for DevOps Trainee Practical Assessment.
 
 # Problem Statement 1: Containerize and Deploy Wisecow Application on Kubernetes
 
