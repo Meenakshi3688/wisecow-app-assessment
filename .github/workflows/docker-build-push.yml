@@ -1,11 +1,14 @@
 
-name: Wisecow Docker CI
+name: Wisecow Docker CI-CD
 
 on:
   push:
     branches:
       - main
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build-and-push:
@@ -32,3 +35,19 @@ jobs:
           tags: |
             badigerm/wisecow:latest
             badigerm/wisecow:${{ github.sha }}
+
+  deploy-to-kubernetes:
+    needs: build-and-push
+    runs-on: self-hosted
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl set image deployment/wisecow \
+            wisecow=badigerm/wisecow:${{ github.sha }}
+
+          kubectl rollout status deployment/wisecow --timeout=180s
+
+          kubectl get pods -l app=wisecow
+
