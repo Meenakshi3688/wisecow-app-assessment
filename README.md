@@ -21,6 +21,7 @@ Requirement
 Create Dockerfile for the image and corresponding k8s manifest to deploy in k8s env. The wisecow service should be exposed as k8s service.
 Github action for creating new image when changes are made to this repo
 [Challenge goal]: Enable secure TLS communication for the wisecow app.
+
 Expected Artifacts
 Github repo containing the app with corresponding dockerfile, k8s manifest, any other artifacts needed.
 Github repo with corresponding github action.
